@@ -1,0 +1,1366 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head></head><body class="bg-white text-slate-800 font-sans antialiased selection:bg-brand-100 selection:text-brand-900"><svg aria-hidden="true" class="inline-defs-container" style="position:absolute;width:0;height:0;overflow:hidden"></svg>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Kamila | Project Manager &amp; Quality Assurance Portfolio</title>
+<!-- Google Fonts for Editorial Serif and Clean Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS v3 CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#F0F7FF',
+              100: '#E0EFFF',
+              200: '#BAE0FD',
+              400: '#38BDF8',
+              500: '#0EA5E9',
+              600: '#0284C7',
+              700: '#0369A1',
+              900: '#0C4A6E',
+            }
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Style - Animations and Utilities -->
+<style data-purpose="custom-animations">
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-8px) rotate(1deg); }
+    }
+    @keyframes floatMedium {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(-1.5deg); }
+    }
+    @keyframes floatSubtle {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    @keyframes pulseSoft {
+      0%, 100% { opacity: 0.2; transform: scale(1); }
+      50% { opacity: 0.35; transform: scale(1.04); }
+    }
+    .animate-float-slow {
+      animation: floatSlow 6s ease-in-out infinite;
+    }
+    .animate-float-medium {
+      animation: floatMedium 5s ease-in-out infinite;
+    }
+    .animate-float-subtle {
+      animation: floatSubtle 4s ease-in-out infinite;
+    }
+    .animate-pulse-glow {
+      animation: pulseSoft 8s ease-in-out infinite;
+    }
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    
+    /* Fade-in & Scroll Reveal Animations */
+    @keyframes fadeInSlideUp {
+      0% {
+        opacity: 0;
+        transform: translateY(22px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-hero-fade {
+      animation: fadeInSlideUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    .animate-hero-fade-delay {
+      animation: fadeInSlideUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.18s backwards;
+    }
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .reveal-on-scroll.is-revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal-on-scroll {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+      .animate-hero-fade, .animate-hero-fade-delay {
+        animation: none !important;
+      }
+    }
+
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<!-- END: Style - Animations and Utilities -->
+<!-- BEGIN: NavigationBar -->
+<header class="relative z-20 bg-white/70 backdrop-blur-md border-b border-brand-100/40 transition-all duration-300"><div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between"><a href="#hero" class="font-serif italic font-bold text-slate-900 text-xl tracking-tight hover:text-brand-600 transition-colors">kamila<span class="text-brand-600">.</span></a><nav class="hidden md:flex items-center gap-6 lg:gap-8"><a href="#about" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">About Me</a><a href="#experiences" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">Experiences</a><a href="#blueprint" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">My Approach</a><a href="#toolkit" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">Toolkits</a><a href="#case-studies" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">Projects</a><a href="#leadership" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">Organizations</a><a href="#what-i-do" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">Highlights</a><a href="https://www.linkedin.com/in/kamilaanisa" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-slate-900 hover:bg-brand-600 rounded-full shadow-sm hover:shadow transition-all duration-200">Let's Connect</a></nav></div></header>
+<!-- END: NavigationBar -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="relative overflow-hidden pt-16 pb-24 lg:pt-24 lg:pb-32 bg-gradient-to-b from-brand-50/50 via-white to-white" id="hero">
+<!-- Decorative Background Aura Blurs -->
+<div class="absolute inset-0 pointer-events-none -z-10 overflow-hidden"><div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] rounded-full blur-[130px] pointer-events-none" style="background: radial-gradient(at center top, rgba(186, 224, 253, 0.85) 0%, rgba(56, 189, 248, 0.5) 40%, rgba(14, 165, 233, 0.2) 70%, transparent 100%);"></div><div class="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[550px] rounded-full blur-[110px] animate-pulse-glow pointer-events-none" style="background: radial-gradient(circle, rgba(56, 189, 248, 0.7) 0%, rgba(14, 165, 233, 0.45) 35%, rgba(147, 197, 253, 0.25) 65%, transparent 85%);"></div><div class="absolute top-12 left-1/4 -translate-x-1/2 w-80 h-80 rounded-full blur-[100px] animate-float-slow pointer-events-none" style="background: radial-gradient(circle, rgba(56, 189, 248, 0.5) 0%, rgba(125, 211, 252, 0.3) 50%, transparent 75%);"></div><div class="absolute top-12 right-1/4 translate-x-1/2 w-80 h-80 rounded-full blur-[100px] animate-float-medium pointer-events-none" style="background: radial-gradient(circle, rgba(147, 197, 253, 0.55) 0%, rgba(56, 189, 248, 0.3) 50%, transparent 75%);"></div></div>
+<div class="max-w-6xl mx-auto px-6 text-center relative z-10">
+<!-- Editorial Headline -->
+<h1 class="text-4xl sm:text-6xl lg:text-7xl font-light tracking-tight text-slate-900 leading-[1.1] max-w-4xl mx-auto">Hi, I'm Kamila&nbsp;<div class="">Help You&nbsp;<span class="font-serif italic font-normal text-brand-600">Understand</span>&nbsp;&amp; Make Sure <font face="Instrument Serif, Georgia, serif"><i>It Works</i></font>.</div></h1>
+<!-- Subheading -->
+<p class="mt-6 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed font-normal animate-hero-fade-delay">
+          From understanding client needs to coordinating development and testing the final product, I work across the software development process to make sure nothing gets lost along the way.
+        </p>
+<!-- Metric Badges Row -->
+<div class="mt-10 flex flex-wrap justify-center items-center gap-3 max-w-3xl mx-auto">
+</div>
+<!-- Hero Actions -->
+
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: AboutMeSection -->
+<section class="border-t border-slate-100 scroll-mt-16" id="about"><!-- Harmonious About Me & Experience Section -->
+<div class="py-24 bg-gradient-to-b from-white via-brand-50/20 to-white relative overflow-hidden"><div aria-hidden="true" class="absolute inset-0 pointer-events-none -z-10 overflow-hidden"><div class="absolute top-0 -left-20 w-96 h-96 rounded-full blur-3xl opacity-60 animate-float-slow" style="background: radial-gradient(circle, rgba(56, 189, 248, 0.35) 0%, rgba(147, 197, 253, 0.2) 50%, transparent 75%);"></div><div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full blur-[100px] opacity-40 animate-pulse-glow" style="background: radial-gradient(circle, rgba(56, 189, 248, 0.25) 0%, rgba(14, 165, 233, 0.15) 45%, transparent 70%);"></div><div class="absolute bottom-1/4 -right-20 w-[450px] h-[450px] rounded-full blur-3xl opacity-60 animate-float-medium" style="background: radial-gradient(circle, rgba(14, 165, 233, 0.25) 0%, rgba(186, 224, 253, 0.18) 50%, transparent 75%);"></div></div>
+<div class="max-w-7xl mx-auto px-6">
+<!-- Top Editorial Header & Narrative -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20"><div class="lg:col-span-5 flex flex-col justify-center"><span class="inline-block text-xs font-bold tracking-widest uppercase text-brand-600 mb-3">About Me</span><h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">Where Business Needs Meet<div><span class="font-serif italic font-normal text-brand-600">Technical Execution</span></div></h2></div><div class="lg:col-span-7 bg-slate-50/80 rounded-3xl p-8 sm:p-10 border border-slate-200/80 shadow-sm reveal-on-scroll"><div class="w-10 h-1 bg-brand-500 rounded mb-6"></div><p class="text-lg sm:text-xl text-slate-800 leading-relaxed font-normal"><b>Second-year Software Engineering</b> student at Universitas Gadjah Mada with experience as a
+Laboratory Assistant in IT Installation, Computer Hardware, and Mobile Application Programming.
+Served as<b> Project Manager</b> and <b>QA Automation Engineer</b> for a departmental information system and
+as Project Manager for a Veterinary Clinic Business Management System. Skilled in project planning,
+backlog management, technical documentation, automated software testing, and team coordination,
+with strong communication and problem-solving abilities</p></div></div>
+<!-- My Experience Metric Cards (Harmonized with Blueprint & Toolkit aesthetic) -->
+<div class="pt-12 border-t border-slate-100 scroll-mt-16" id="experiences">
+<div class="max-w-2xl mb-10">
+<h3 class="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-slate-900 mt-2">My <span class="font-serif italic font-normal text-brand-600">Experiences</span></h3>
+<p class="mt-2 text-slate-600 text-sm leading-relaxed">
+          Hands-on experience in IT infrastructure, computer hardware, and mobile application development, with a focus on technical troubleshooting, laboratory instruction, and student mentoring.
+        </p>
+</div>
+<div class="flex flex-col gap-6"><div class="p-8 sm:p-10 rounded-3xl bg-white border border-slate-200/90 shadow-sm hover:shadow-lg hover:border-brand-400 transition-all duration-300 group reveal-on-scroll"><div class="flex flex-col md:flex-row md:items-start justify-between gap-6 pb-6 border-b border-slate-100"><div class="flex items-start gap-4 sm:gap-5"><div><h4 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight group-hover:text-brand-600 transition-colors">Laboratory Assistant – Information Technology and Computer Installation</h4><p class="text-sm font-medium text-slate-500 mt-1">Computer Systems &amp; Hardware Laboratory</p></div></div><div class="flex md:flex-col items-center md:items-end justify-between shrink-0 gap-1.5"></div></div><div class="mt-6"><p class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4">Key Responsibilities &amp; Contributions</p><ul class="space-y-3.5"><li class="flex items-start gap-3"><div class="w-5 h-5 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 mt-0.5 border border-brand-100"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg></div><p class="text-sm text-slate-600 leading-relaxed">Suported laboratory instruction for a class of 25 students, covering computer hardware identification, PC disassembly and assembly, and operating system installation using VirtualBox.</p></li><li class="flex items-start gap-3"><div class="w-5 h-5 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 mt-0.5 border border-brand-100"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg></div><p class="text-sm text-slate-600 leading-relaxed">Diagnosed and resolved hardware-related issues and operating system installation errors during practical sessions.</p></li><li class="flex items-start gap-3"><div class="w-5 h-5 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 mt-0.5 border border-brand-100"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg></div><p class="text-sm text-slate-600 leading-relaxed">Delivered instructional materials, assessed student assignments, and provided academic guidance and consultation to support practical learning.</p></li></ul></div></div><div class="p-8 sm:p-10 rounded-3xl bg-white border border-slate-200/90 shadow-sm hover:shadow-lg hover:border-brand-400 transition-all duration-300 group reveal-on-scroll"><div class="flex flex-col md:flex-row md:items-start justify-between gap-6 pb-6 border-b border-slate-100"><div class="flex items-start gap-4 sm:gap-5"><div><h4 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight group-hover:text-brand-600 transition-colors">Laboratory	Assistant	–	Mobile	Application	Programming</h4><p class="text-sm font-medium text-slate-500 mt-1">Mobile Computing &amp; Application Laboratory</p></div></div><div class="flex md:flex-col items-center md:items-end justify-between shrink-0 gap-1.5"></div></div><div class="mt-6"><p class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4">Key Responsibilities &amp; Contributions</p><ul class="space-y-3.5"><li class="flex items-start gap-3"><div class="w-5 h-5 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 mt-0.5 border border-brand-100"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg></div><p class="text-sm text-slate-600 leading-relaxed">Supported practical instruction for a class of 25 students in Android application development
+using Kotlin and Android Studio.</p></li><li class="flex items-start gap-3"><div class="w-5 h-5 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 mt-0.5 border border-brand-100"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg></div><p class="text-sm text-slate-600 leading-relaxed">Assisted in diagnosing and resolving development environment issues involving Android Studio,
+Gradle build configurations, and Android emulators.</p></li><li class="flex items-start gap-3"><div class="w-5 h-5 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 mt-0.5 border border-brand-100"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg></div><p class="text-sm text-slate-600 leading-relaxed">Delivered instructional materials, evaluated student assignments, and provided technical
+guidance and consultation on Android application development.</p></li></ul></div></div></div>
+</div>
+</div>
+</div></section>
+<!-- END: AboutMeSection -->
+<!-- BEGIN: MethodologySection -->
+<section class="py-24 bg-slate-50/60 border-y border-slate-100 relative scroll-mt-16" id="blueprint"><div aria-hidden="true" class="absolute inset-0 pointer-events-none -z-10 overflow-hidden"><div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[520px] rounded-full blur-[110px] animate-pulse-glow pointer-events-none" style="background: radial-gradient(circle, rgba(56, 189, 248, 0.55) 0%, rgba(14, 165, 233, 0.35) 30%, rgba(147, 197, 253, 0.2) 60%, transparent 80%);"></div><div class="absolute top-6 left-1/4 -translate-x-1/2 w-96 h-96 rounded-full blur-[100px] animate-float-slow pointer-events-none" style="background: radial-gradient(circle, rgba(56, 189, 248, 0.45) 0%, rgba(125, 211, 252, 0.25) 50%, transparent 75%);"></div><div class="absolute bottom-6 right-1/4 translate-x-1/2 w-96 h-96 rounded-full blur-[100px] animate-float-medium pointer-events-none" style="background: radial-gradient(circle, rgba(14, 165, 233, 0.4) 0%, rgba(56, 189, 248, 0.25) 45%, transparent 75%);"></div><div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-64 rounded-full blur-3xl animate-float-subtle pointer-events-none" style="background: radial-gradient(ellipse, rgba(56, 189, 248, 0.3) 0%, rgba(186, 224, 253, 0.15) 55%, transparent 80%);"></div></div>
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="mt-3 text-3xl sm:text-4xl font-light text-slate-900">
+            From Requirements to <span class="font-serif italic font-normal text-brand-600">Results</span></h2>
+<p class="mt-3 text-slate-600 text-sm md:text-base">
+            Understanding client needs, coordinating development, and ensuring quality through every stage of the software development process.
+          </p>
+</div>
+<!-- 3 Connected Cards Dynamic Offset Grid with Curved Connectors -->
+<div class="relative pt-10 pb-12"><!-- Flowing Connector Overlay across the staggered cards (Desktop view) -->
+<svg aria-hidden="true" class="hidden md:block absolute inset-0 w-full h-full pointer-events-none z-0 overflow-visible" fill="none" preserveAspectRatio="none" viewBox="0 0 1000 480"><defs><filter height="200%" id="blue-neon-glow" width="200%" x="-50%" y="-50%"><feGaussianBlur result="coloredBlur" stdDeviation="4"></feGaussianBlur><feMerge><feMergeNode in="coloredBlur"></feMergeNode><feMergeNode in="coloredBlur"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter></defs><path d="M 315 140 C 355 140, 350 200, 385 200" filter="url(#blue-neon-glow)" stroke="#38BDF8" stroke-dasharray="4 3" stroke-linecap="round" stroke-width="2.5"></path><circle cx="315" cy="140" fill="#0EA5E9" filter="url(#blue-neon-glow)" r="4.5"></circle><circle cx="385" cy="200" fill="#0EA5E9" filter="url(#blue-neon-glow)" r="4.5"></circle><path d="M 655 240 C 690 240, 680 160, 715 160" filter="url(#blue-neon-glow)" stroke="#38BDF8" stroke-dasharray="4 3" stroke-linecap="round" stroke-width="2.5"></path><circle cx="655" cy="240" fill="#0EA5E9" filter="url(#blue-neon-glow)" r="4.5"></circle><circle cx="715" cy="160" fill="#0EA5E9" filter="url(#blue-neon-glow)" r="4.5"></circle></svg>
+<!-- 3 Staggered Cards Grid with Playful Rotations -->
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-start"><!-- Card 01: Analyze (Elevated, subtle tilt with luminous halo underglow) --><div class="relative group mt-0 reveal-on-scroll"><div class="absolute -inset-1.5 rounded-3xl bg-gradient-to-r from-brand-400 via-sky-400 to-brand-500 opacity-30 blur-xl group-hover:opacity-60 transition duration-500 pointer-events-none transform md:-rotate-1"></div><div class="relative bg-white rounded-3xl p-8 border border-slate-200/90 shadow-lg group-hover:shadow-2xl group-hover:border-brand-400 transition-all duration-300 flex flex-col justify-between transform md:-rotate-1 hover:rotate-0"><div><div class="flex items-center justify-between mb-8"><span class="text-4xl font-serif text-slate-800 group-hover:text-brand-600 transition-colors font-light">01</span><span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-brand-50 text-brand-700 border border-brand-100 shadow-sm">System Analysis</span></div><h3 class="text-2xl font-bold text-slate-900 mb-3 tracking-tight">Analyze</h3><p class="text-slate-600 text-sm leading-relaxed font-normal"></p><p data-pm-slice="1 1 []" class="">Translating client needs into clear system requirements through requirement gathering, stakeholder analysis, user stories, and acceptance criteria to ensure alignment with business objectives.</p><p></p></div></div></div><!-- Card 02: Facilitate (Stepped down, subtle counter tilt with luminous halo underglow) --><div class="relative group mt-0 md:mt-12 reveal-on-scroll"><div class="absolute -inset-1.5 rounded-3xl bg-gradient-to-r from-brand-400 via-sky-400 to-brand-500 opacity-30 blur-xl group-hover:opacity-60 transition duration-500 pointer-events-none transform md:rotate-2"></div><div class="relative bg-white rounded-3xl p-8 border border-slate-200/90 shadow-lg group-hover:shadow-2xl group-hover:border-brand-400 transition-all duration-300 flex flex-col justify-between transform md:rotate-2 hover:rotate-0"><div><div class="flex items-center justify-between mb-8"><span class="text-4xl font-serif text-slate-800 group-hover:text-brand-600 transition-colors font-light">02</span><span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-brand-50 text-brand-700 border border-brand-100 shadow-sm">Project Manager</span></div><h3 class="text-2xl font-bold text-slate-900 mb-3 tracking-tight">Facilitate</h3><p class="text-slate-600 text-sm leading-relaxed font-normal"></p><p data-pm-slice="1 1 []" class="">Translating client requirements into actionable tasks for developers, coordinating cross-functional teams, managing project backlogs, and ensuring smooth project delivery.</p><p></p></div></div></div><!-- Card 03: Assure (Stepped back up, subtle tilt with luminous halo underglow) --><div class="relative group mt-0 md:mt-3 reveal-on-scroll"><div class="absolute -inset-1.5 rounded-3xl bg-gradient-to-r from-brand-400 via-sky-400 to-brand-500 opacity-30 blur-xl group-hover:opacity-60 transition duration-500 pointer-events-none transform md:-rotate-1"></div><div class="relative bg-white rounded-3xl p-8 border border-slate-200/90 shadow-lg group-hover:shadow-2xl group-hover:border-brand-400 transition-all duration-300 flex flex-col justify-between transform md:-rotate-1 hover:rotate-0"><div><div class="flex items-center justify-between mb-8"><span class="text-4xl font-serif text-slate-800 group-hover:text-brand-600 transition-colors font-light">03</span><span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-brand-50 text-brand-700 border border-brand-100 shadow-sm">Quality Assurance</span></div><h3 class="text-2xl font-bold text-slate-900 mb-3 tracking-tight">Assure</h3><p class="text-slate-600 text-sm leading-relaxed font-normal"></p><p data-pm-slice="1 1 []" class="">Validating that delivered systems meet client requirements through test planning, manual and automated testing, bug tracking, and functional verification to ensure system quality and reliability.</p><p></p></div></div></div></div></div>
+</div>
+</section>
+<!-- END: MethodologySection -->
+<!-- BEGIN: ToolkitSection -->
+<section class="py-24 bg-white relative overflow-hidden scroll-mt-16" data-purpose="toolkit-section" id="toolkit">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<h2 class="mt-3 text-3xl sm:text-4xl font-light text-slate-900">
+            What's In My <span class="font-serif italic font-normal text-brand-600">Digital Toolkit</span>
+</h2>
+<p class="mt-3 text-slate-600 text-sm md:text-base"></p><p data-pm-slice="1 1 []" class="">Combining project management tools, development technologies, and testing frameworks to plan projects, collaborate with developers, and ensure reliable software delivery.</p><p></p>
+</div>
+<!-- Filter Pill Controls -->
+<div class="flex flex-wrap items-center justify-center gap-2 mb-12" id="toolkit-filters">
+<button class="filter-btn px-4 py-2 text-xs font-semibold rounded-full bg-slate-900 text-white transition" data-filter="all" type="button">All Tools</button>
+<button class="filter-btn px-4 py-2 text-xs font-semibold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition" data-filter="pm" type="button">Management &amp; Docs</button>
+<button class="filter-btn px-4 py-2 text-xs font-semibold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition" data-filter="qa" type="button">QA &amp; Testing</button>
+<button class="filter-btn px-4 py-2 text-xs font-semibold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition" data-filter="dev" type="button">DevOps &amp; Code</button>
+</div>
+<!-- Interactive Visual Canvas / Floating Showcase -->
+<div class="relative min-h-[460px] rounded-3xl bg-gradient-to-b from-slate-50 via-brand-50/20 to-slate-50 border border-slate-200/80 p-8 flex items-center justify-center overflow-hidden reveal-on-scroll"><div aria-hidden="true" class="absolute inset-0 pointer-events-none overflow-hidden"><div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[520px] h-[520px] rounded-full blur-3xl opacity-75 animate-pulse-glow" style="background: radial-gradient(circle, rgba(56, 189, 248, 0.35) 0%, rgba(14, 165, 233, 0.18) 45%, transparent 70%);"></div><div class="absolute top-8 left-1/4 w-60 h-60 rounded-full blur-2xl opacity-40 animate-float-slow" style="background: radial-gradient(circle, rgba(147, 197, 253, 0.3) 0%, transparent 70%);"></div><div class="absolute bottom-8 right-1/4 w-60 h-60 rounded-full blur-2xl opacity-40 animate-float-medium" style="background: radial-gradient(circle, rgba(56, 189, 248, 0.25) 0%, transparent 70%);"></div></div>
+<!-- Central Glassmorphic PM Capsule -->
+<div class="relative z-10 w-64 h-64 md:w-72 md:h-72 rounded-full bg-gradient-to-tr from-white via-white to-brand-100 shadow-2xl border-4 border-white flex flex-col items-center justify-center text-center p-6 transition transform hover:scale-105">
+<div class="w-14 h-14 rounded-2xl bg-brand-500 text-white flex items-center justify-center shadow-md mb-3">
+<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+</div>
+<h4 class="font-serif italic text-2xl font-bold text-slate-900">Kamila's Tech Stack</h4>
+<p class="text-xs text-slate-500 mt-1">Cross-functional driver for reliable, scalable software</p>
+<div class="mt-3 inline-block px-3 py-1 rounded-full bg-brand-50 text-[11px] font-bold text-brand-700">Ready to Deploy</div>
+</div>
+<!-- Floating Badges Layer -->
+<!-- Top Left: Notion -->
+<div class="tool-item absolute top-6 left-6 md:top-10 md:left-16 animate-float-slow" data-category="pm">
+<div class="flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-white shadow-md border border-slate-200 hover:border-brand-400 transition hover:shadow-lg">
+<span class="w-7 h-7 rounded-lg bg-slate-900 text-white flex items-center justify-center font-black text-xs">N</span>
+<div class="text-left leading-tight">
+<p class="text-xs font-bold text-slate-800">Notion</p>
+<p class="text-[10px] text-slate-400">Roadmaps &amp; Specs</p>
+</div>
+</div>
+</div>
+<!-- Top Center: Figma -->
+<div class="tool-item absolute top-4 md:top-8 animate-float-medium" data-category="pm">
+<div class="flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-white shadow-md border border-slate-200 hover:border-brand-400 transition hover:shadow-lg">
+<span class="w-7 h-7 rounded-lg bg-violet-600 text-white flex items-center justify-center font-bold text-xs">Fig</span>
+<div class="text-left leading-tight">
+<p class="text-xs font-bold text-slate-800">Figma</p>
+<p class="text-[10px] text-slate-400">Wireframes &amp; UX</p>
+</div>
+</div>
+</div>
+<!-- Top Right: Postman (QA) -->
+<div class="tool-item absolute top-8 right-6 md:top-12 md:right-20 animate-float-slow" data-category="qa">
+<div class="flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-white shadow-md border border-slate-200 hover:border-brand-400 transition hover:shadow-lg">
+<span class="w-7 h-7 rounded-lg bg-orange-500 text-white flex items-center justify-center font-bold text-xs">PM</span>
+<div class="text-left leading-tight">
+<p class="text-xs font-bold text-slate-800">Postman</p>
+<p class="text-[10px] text-slate-400">API Testing Suites</p>
+</div>
+</div>
+</div>
+<!-- Middle Left: Playwright (QA) -->
+<div class="tool-item absolute top-1/2 -translate-y-1/2 left-4 md:left-12 animate-float-medium" data-category="qa">
+<div class="flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-white shadow-md border border-slate-200 hover:border-brand-400 transition hover:shadow-lg">
+<span class="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold text-xs">PW</span>
+<div class="text-left leading-tight">
+<p class="text-xs font-bold text-slate-800">Playwright</p>
+<p class="text-[10px] text-slate-400">E2E Automation</p>
+</div>
+</div>
+</div>
+<!-- Middle Right: Docker & CI/CD -->
+<div class="tool-item absolute top-1/2 -translate-y-1/2 right-4 md:right-12 animate-float-slow" data-category="dev">
+<div class="flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-white shadow-md border border-slate-200 hover:border-brand-400 transition hover:shadow-lg">
+<span class="w-7 h-7 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-xs">DK</span>
+<div class="text-left leading-tight">
+<p class="text-xs font-bold text-slate-800">Docker &amp; GitHub</p>
+<p class="text-[10px] text-slate-400">CI/CD &amp; Environments</p>
+</div>
+</div>
+</div>
+<!-- Bottom Left: Office & Google Sheets -->
+<div class="tool-item absolute bottom-8 left-6 md:bottom-12 md:left-24 animate-float-subtle" data-category="pm">
+<div class="flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-white shadow-md border border-slate-200 hover:border-brand-400 transition hover:shadow-lg">
+<span class="w-7 h-7 rounded-lg bg-green-600 text-white flex items-center justify-center font-bold text-xs">G</span>
+<div class="text-left leading-tight">
+<p class="text-xs font-bold text-slate-800">Google Sheets / MS</p>
+<p class="text-[10px] text-slate-400">Test Matrix &amp; Budget</p>
+</div>
+</div>
+</div>
+<!-- Bottom Center: Python & SQL -->
+<div class="tool-item absolute bottom-4 md:bottom-8 animate-float-slow" data-category="dev">
+<div class="flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-white shadow-md border border-slate-200 hover:border-brand-400 transition hover:shadow-lg">
+<span class="w-7 h-7 rounded-lg bg-sky-500 text-white flex items-center justify-center font-bold text-xs">Py</span>
+<div class="text-left leading-tight">
+<p class="text-xs font-bold text-slate-800">Python &amp; MySQL</p>
+<p class="text-[10px] text-slate-400">Scripting &amp; Data Validation</p>
+</div>
+</div>
+</div>
+<!-- Bottom Right: Laravel & Kotlin -->
+<div class="tool-item absolute bottom-8 right-6 md:bottom-12 md:right-24 animate-float-medium" data-category="dev">
+<div class="flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-white shadow-md border border-slate-200 hover:border-brand-400 transition hover:shadow-lg">
+<span class="w-7 h-7 rounded-lg bg-red-500 text-white flex items-center justify-center font-bold text-xs">Lv</span>
+<div class="text-left leading-tight">
+<p class="text-xs font-bold text-slate-800">Laravel &amp; Android</p>
+<p class="text-[10px] text-slate-400">Full-Stack Tech Literacy</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Grid of tools listed clearly -->
+<div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+<div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+<p class="text-xs uppercase tracking-wider font-semibold text-slate-400 mb-1">Management</p>
+<p class="text-sm font-semibold text-slate-800">Notion, MS Office, Google Workspace</p>
+</div>
+<div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+<p class="text-xs uppercase tracking-wider font-semibold text-slate-400 mb-1">Design &amp; Flows</p>
+<p class="text-sm font-semibold text-slate-800">Figma, Draw.io, Canva</p>
+</div>
+<div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+<p class="text-xs uppercase tracking-wider font-semibold text-slate-400 mb-1">Testing / QA</p>
+<p class="text-sm font-semibold text-slate-800">Postman, Playwright, BDD</p>
+</div>
+<div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+<p class="text-xs uppercase tracking-wider font-semibold text-slate-400 mb-1">Engineering</p>
+<p class="text-sm font-semibold text-slate-800">Py, JS, Kotlin, SQL, GitHub, Docker</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ToolkitSection -->
+<!-- BEGIN: FeaturedProjectsSection -->
+<section class="py-24 bg-slate-50/80 border-t border-slate-100 relative overflow-hidden scroll-mt-16" id="case-studies">
+<div aria-hidden="true" class="absolute inset-0 pointer-events-none -z-10 overflow-hidden">
+  <div class="absolute top-1/4 -right-24 w-[500px] h-[500px] rounded-full blur-3xl opacity-60 animate-float-slow" style="background: radial-gradient(circle, rgba(56, 189, 248, 0.25) 0%, rgba(147, 197, 253, 0.12) 50%, transparent 75%);"></div>
+  <div class="absolute bottom-1/4 -left-24 w-[500px] h-[500px] rounded-full blur-3xl opacity-60 animate-float-medium" style="background: radial-gradient(circle, rgba(14, 165, 233, 0.2) 0%, rgba(186, 224, 253, 0.12) 50%, transparent 75%);"></div>
+</div>
+<div class="max-w-7xl mx-auto px-6">
+  <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+    <div>
+      <h2 class="mt-3 text-3xl sm:text-4xl font-light text-slate-900">Real-World <span class="font-serif italic font-normal text-brand-600">Projects</span></h2>
+      <p class="mt-2 text-slate-600 text-sm md:text-base">
+        Explore the work behind each project through documented requirements, testing records, and system architecture diagrams.
+      </p>
+    </div>
+    <a href="https://drive.google.com/drive/folders/1mtOJfmqp2ur1FVsL6EGsdhZQfkmRVt7H?usp=drive_link" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-brand-50 hover:bg-brand-500 text-brand-700 hover:text-white border border-brand-200 hover:border-brand-500 text-xs font-semibold transition-all duration-200 shadow-xs shrink-0">
+      <span>Click here to see all portofolio</span>
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+    </a>
+  </div>
+
+  <!-- Project Cards Stack -->
+  <div class="space-y-16">
+    <!-- Project 01: SIYUDIS -->
+    <article class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 reveal-on-scroll">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        <!-- Content Column -->
+        <div class="lg:col-span-7 p-8 md:p-10 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold">Project Manager</span>
+            </div>
+            <h3 class="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">SIYUDIS: Sistem Informasi Yudisium</h3>
+            <p class="mt-4 text-slate-600 text-sm leading-relaxed">
+              SIYUDIS is an information system that supports the student graduation (yudisium) process at the Department of Electrical Engineering and Informatics, SV UGM, and it is developed under the department’s supervision. I work on it as both Project Manager and QA Automation Engineer for a team of seven. On the management side, I keep the product backlog and the Work Breakdown Structure (WBS) in order and prepare the technical documentation, including the Software Requirements Specification (SRS), activity diagrams, and use case diagrams. On the quality side, I write the test cases, run automated API tests in Postman, and use Playwright for end to end testing, so we can be confident that the system works as intended and stays reliable.
+            </p>
+          </div>
+          <!-- Documentation Vault Links Grid -->
+          <div class="mt-6 pt-6 border-t border-slate-100">
+            <p class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Verified Project Documents:</p>
+            <div class="flex flex-wrap gap-2.5">
+              <!-- SIYUDIS Badge 1: SRS & User Manual -->
+              <a class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 text-slate-700 text-xs font-medium hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200 border border-transparent transition shadow-xs" href="https://drive.google.com/drive/folders/1gNuEMwCnVGL7C0cFwx73ZHLJN4GHlRHa" target="_blank" rel="noopener noreferrer">
+                <span>SRS &amp; User Manual</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </a>
+              <!-- SIYUDIS Badge 2: Test Case & Functional Requirement -->
+              <a class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 text-slate-700 text-xs font-medium hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200 border border-transparent transition shadow-xs" href="https://drive.google.com/drive/folders/1WU_Fc-f6o31OsCkkE_t3UjtDB-D2UpBu" target="_blank" rel="noopener noreferrer">
+                <span>Test Case &amp; Functional Requirement</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </a>
+              <!-- SIYUDIS Badge 3: WBS & Product Backlog -->
+              <a class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 text-slate-700 text-xs font-medium hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200 border border-transparent transition shadow-xs" href="https://drive.google.com/drive/folders/1GHM87dcEdqryqGIzWpxfhy0VSazIJJgW" target="_blank" rel="noopener noreferrer">
+                <span>WBS &amp; Product Backlog</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </a>
+              <!-- SIYUDIS Badge 4: Bisnis Requirement Diagram (BRD) -->
+              <a class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 text-slate-700 text-xs font-medium hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200 border border-transparent transition shadow-xs" href="https://drive.google.com/drive/folders/1rWNfjq9FBVZ03RQ8GOhzaLE0eT8rkbdJ" target="_blank" rel="noopener noreferrer">
+                <span>Bisnis Requirement Diagram (BRD)</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </a>
+              <!-- SIYUDIS Badge 5: Product Requirement Document (PRD) -->
+              <a class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 text-slate-700 text-xs font-medium hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200 border border-transparent transition shadow-xs" href="https://drive.google.com/file/d/1j4YE8EwzyuJjfFy6pqWLao5md4ilpiaP/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+                <span>Product Requirement Document (PRD)</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </a>
+              <!-- SIYUDIS Badge 6: Role & Business Flow -->
+              <a class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 text-slate-700 text-xs font-medium hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200 border border-transparent transition shadow-xs" href="https://drive.google.com/file/d/1HEoi8jlSinwRVta6WGZjpxz9KFTj4HjB/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+                <span>Role &amp; Business Flow</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Graphic Mockup Preview with Actual Screenshot (Clean Light Theme, No Black Background) -->
+        <div class="lg:col-span-5 bg-slate-50/70 p-6 sm:p-8 flex flex-col justify-center items-center relative overflow-hidden min-h-[320px] group border-t lg:border-t-0 lg:border-l border-slate-200/80">
+          <div class="w-full max-w-md rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-white relative">
+            <div class="flex items-center justify-between px-4 py-2.5 bg-slate-100/90 border-b border-slate-200 text-xs font-mono text-slate-500">
+              <div class="flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-rose-400"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+              </div>
+              <span class="text-[11px] text-slate-600 font-medium font-sans">siyudis.sv.ugm.ac.id</span>
+              <span class="text-[10px] text-emerald-600 font-semibold font-mono">autogenerate pdf</span>
+            </div>
+            <div class="relative overflow-hidden aspect-[16/10] bg-white flex items-center justify-center">
+              <img src="Web SIYUDIS.png" alt="Web SIYUDIS Screenshot" class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-105">
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 02: Praktik Dokter Hewan Fanina -->
+    <article class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 reveal-on-scroll">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+        <!-- Content Column -->
+        <div class="lg:col-span-7 p-8 md:p-10 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <span class="px-3 py-1 rounded-full bg-purple-50 text-purple-700 text-xs font-semibold">Project Manager &amp; QA Automation</span>
+            </div>
+            <h3 class="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">Business Management System Praktik drh.Fanina</h3>
+            <p class="mt-4 text-slate-600 text-sm leading-relaxed">
+              For Fanina Veterinary Clinic, I led a team of four in building a web based business management system. The system connects with WhatsApp to send vaccination reminders and to generate and deliver PDF invoices automatically. As Project Manager, I handled project planning and requirements, from the functional requirements, SRS, and WBS to the product backlog. I also produced Data Flow Diagrams (DFD) and use case diagrams to support the system design, prepared User Acceptance Testing (UAT) documentation to validate the system’s functionality, and wrote user manuals and project documentation so that end users could adopt the system with clear guidance.
+            </p>
+          </div>
+          <!-- Documentation Vault Links Grid -->
+          <div class="mt-6 pt-6 border-t border-slate-100">
+            <p class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Verified Project Documents:</p>
+            <div class="flex flex-wrap gap-2.5">
+              <!-- FANINA Badge 1: SRS & User Manual -->
+              <a class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 text-slate-700 text-xs font-medium hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200 border border-transparent transition shadow-xs" href="https://drive.google.com/drive/folders/1pxDInN6Mpm1rONEchr9FON5rktdTgbgd" target="_blank" rel="noopener noreferrer">
+                <span>SRS &amp; User Manual</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </a>
+              <!-- FANINA Badge 2: Test Case & Functional Requirement -->
+              <a class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 text-slate-700 text-xs font-medium hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200 border border-transparent transition shadow-xs" href="https://drive.google.com/drive/folders/1cpb3E0-i8DBv8ta3PU6J-j6Gun4rxMPf" target="_blank" rel="noopener noreferrer">
+                <span>Test Case &amp; Functional Requirement</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </a>
+              <!-- FANINA Badge 3: WBS & Product Backlog -->
+              <a class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 text-slate-700 text-xs font-medium hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200 border border-transparent transition shadow-xs" href="https://drive.google.com/drive/folders/1OvMHMeMASVAtFvfL382MhSHeaRkXvvP8" target="_blank" rel="noopener noreferrer">
+                <span>WBS &amp; Product Backlog</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </a>
+              <!-- FANINA Badge 4: Bisnis Requirement Diagram (BRD) -->
+              <a class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 text-slate-700 text-xs font-medium hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200 border border-transparent transition shadow-xs" href="https://drive.google.com/drive/folders/1XcmW54Q1MRwPRlYZZX52FXJ8gXy46rYs" target="_blank" rel="noopener noreferrer">
+                <span>Bisnis Requirement Diagram (BRD)</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </a>
+              <!-- FANINA Badge 5: DFD Level 1 -->
+              <a class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 text-slate-700 text-xs font-medium hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200 border border-transparent transition shadow-xs" href="https://drive.google.com/file/d/1YFspMJFoyGzoSA_SoGq5iUOO79A6VreR/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+                <span>DFD Level 1</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </a>
+              <!-- FANINA Badge 6: Project Charter -->
+              <a class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 text-slate-700 text-xs font-medium hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200 border border-transparent transition shadow-xs" href="https://drive.google.com/file/d/1B00hHZOWotufEB22K0AYUXSrc0VAY8r3/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+                <span>Project Charter</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Graphic Mockup Preview with Actual Screenshot (Clean Light Theme, No Black Background) -->
+        <div class="lg:col-span-5 bg-slate-50/70 p-6 sm:p-8 flex flex-col justify-center items-center relative overflow-hidden min-h-[320px] group border-t lg:border-t-0 lg:border-l border-slate-200/80">
+          <div class="w-full max-w-md rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-white relative">
+            <div class="flex items-center justify-between px-4 py-2.5 bg-slate-100/90 border-b border-slate-200 text-xs font-mono text-slate-500">
+              <div class="flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-rose-400"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+              </div>
+              <span class="text-[11px] text-slate-600 font-medium font-sans">praktik-drhfanina.com</span>
+              <span class="text-[10px] text-brand-600 font-semibold font-mono">WhatsApp Integrated</span>
+            </div>
+            <div class="relative overflow-hidden aspect-[16/10] bg-white flex items-center justify-center">
+              <img src="Web drh.Fanina.png" alt="Web drh. Fanina Screenshot" class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-105">
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+</section>
+<!-- END: FeaturedProjectsSection -->
+<!-- BEGIN: LeadershipExperienceSection -->
+<section class="py-24 bg-white relative scroll-mt-16" id="leadership">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<h2 class="text-3xl sm:text-4xl font-light text-slate-900">Organizational <span class="font-serif italic font-normal text-brand-600">Experiences</span></h2>
+<p class="mt-2 text-slate-600 text-sm md:text-base">Building team collaboration, leading event operations, and turning ideas into well-executed programs.</p>
+</div>
+<div class="relative mx-auto max-w-6xl" id="carousel-container" data-no-pause="true">
+<!-- Navigation Arrow Buttons -->
+<button aria-label="Previous slide" class="absolute -left-4 sm:-left-6 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white border-2 border-brand-500 shadow-md flex items-center justify-center text-brand-600 hover:text-brand-700 hover:bg-brand-50 hover:border-brand-600 hover:scale-105 hover:shadow-brand-500/20 transition-all z-20 focus:outline-none" id="carousel-prev">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</button>
+<button aria-label="Next slide" class="absolute -right-4 sm:-right-6 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white border-2 border-brand-500 shadow-md flex items-center justify-center text-brand-600 hover:text-brand-700 hover:bg-brand-50 hover:border-brand-600 hover:scale-105 hover:shadow-brand-500/20 transition-all z-20 focus:outline-none" id="carousel-next">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</button>
+<!-- Horizontal Slides Wrapper with Seamless Transition -->
+<div class="overflow-hidden rounded-3xl">
+<div class="flex transition-transform duration-500 ease-out" id="carousel-track">
+<!-- Carousel Card #1: KOMATIK UGM -->
+<div class="carousel-slide shrink-0 w-full bg-white border border-slate-200/80 rounded-3xl shadow-sm p-6 sm:p-10 md:p-12 box-border">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<div class="lg:col-span-4 flex justify-center">
+<div class="w-full max-w-[280px] h-[400px] rounded-3xl p-6 text-white flex flex-col justify-end shadow-2xl relative overflow-hidden bg-gradient-to-b from-[#0c2e44] via-[#093557] to-[#0284c7]">
+<!-- Foto Dokumentasi KOMATIK UGM -->
+<img src="Komatik.png" alt="Foto KOMATIK UGM" class="absolute inset-0 w-full h-full object-cover z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/35 to-transparent z-0 pointer-events-none"></div>
+<div class="z-10 py-2">
+<h3 class="text-2xl sm:text-3xl font-serif italic font-normal text-white leading-tight drop-shadow-md">KOMATIK UGM</h3>
+<p class="text-xs text-slate-200 font-sans mt-2 font-medium tracking-wide drop-shadow-sm">Head of Human Resource Development Division</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col justify-between space-y-6">
+<div>
+<div class="flex items-center gap-2.5 mb-3">
+<span class="inline-block px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold font-mono">December 2025 - Present</span>
+</div>
+<h3 class="text-2xl sm:text-3xl lg:text-[32px] font-bold text-slate-900 tracking-tight leading-tight">Head of Human Resource Development Division</h3>
+<p class="text-slate-600 text-sm leading-relaxed mt-2">Student activity units and communities at UGM that focus on self-development in the field of ICT.</p>
+</div>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Managing the open recruitment process for management and divisional staffing.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Organizing internal activities such as gatherings and team bonding events.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Managing appreciation programs such as Staff of The Month (SOTM) to boost team morale.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Managing internal organizational attributes including official KOMATIK jackets.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Maintaining the comfort, welfare, and engagement of all organization members.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Carousel Card #2: Ikagamass On Tryout (INTO UGM) 2026 -->
+<div class="carousel-slide shrink-0 w-full bg-white border border-slate-200/80 rounded-3xl shadow-sm p-6 sm:p-10 md:p-12 box-border">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<div class="lg:col-span-4 flex justify-center">
+<div class="w-full max-w-[280px] h-[400px] rounded-3xl p-6 text-white flex flex-col justify-end shadow-2xl relative overflow-hidden bg-gradient-to-b from-[#18181b] via-[#27272a] to-[#2563eb]">
+<!-- Foto Dokumentasi Ikagamass On Tryout (INTO UGM) 2026 -->
+<img src="INTO 2026.png" alt="Foto Ikagamass On Tryout (INTO UGM) 2026" class="absolute inset-0 w-full h-full object-cover z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/35 to-transparent z-0 pointer-events-none"></div>
+<div class="z-10 py-2">
+<h3 class="text-2xl sm:text-3xl font-serif italic font-normal text-white leading-tight drop-shadow-md">Ikagamass On Tryout (INTO UGM) 2026</h3>
+<p class="text-xs text-slate-200 font-sans mt-2 font-medium tracking-wide drop-shadow-sm">Expert Staff of Event Division</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col justify-between space-y-6">
+<div>
+<div class="flex items-center gap-2.5 mb-3">
+<span class="inline-block px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold font-mono">August 2025 - January 2026</span>
+</div>
+<h3 class="text-2xl sm:text-3xl lg:text-[32px] font-bold text-slate-900 tracking-tight leading-tight">Expert Staff of Event Division</h3>
+<p class="text-slate-600 text-sm leading-relaxed mt-2">A series of national tryout event held by IKAGAMASS UGM with 1000+ Participants.</p>
+</div>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Organizing a series of national events (Social Services, Talk Shows, Main Events) targeting more than 1,000 participants.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Acting as Stage Manager (Event Director) for the Main Event: Overseeing overall technical execution, providing instructions for videotron visuals, lighting, and sound, while coordinating the stage crew for smooth property transitions.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Leading Visual Concept: Designing videotron storyboards from start to finish and venue layouts, working closely with the Media & Creative division to ensure visual consistency.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Managing Opening & Closing Ceremonies: Developing creative concepts and coordinating talent/performers to ensure flawless rundown execution.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Carousel Card #3: Tech Enthusiast Day 2025 (TED 2025) -->
+<div class="carousel-slide shrink-0 w-full bg-white border border-slate-200/80 rounded-3xl shadow-sm p-6 sm:p-10 md:p-12 box-border">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<div class="lg:col-span-4 flex justify-center">
+<div class="w-full max-w-[280px] h-[400px] rounded-3xl p-6 text-white flex flex-col justify-end shadow-2xl relative overflow-hidden bg-gradient-to-b from-[#0f172a] via-[#1e1b4b] to-[#4338ca]">
+<!-- Foto Dokumentasi Tech Enthusiast Day 2025 (TED 2025) -->
+<img src="TED 2025.png" alt="Foto Tech Enthusiast Day 2025 (TED 2025)" class="absolute inset-0 w-full h-full object-cover z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/35 to-transparent z-0 pointer-events-none"></div>
+<div class="z-10 py-2">
+<h3 class="text-2xl sm:text-3xl font-serif italic font-normal text-white leading-tight drop-shadow-md">Tech Enthusiast Day 2025 (TED 2025)</h3>
+<p class="text-xs text-slate-200 font-sans mt-2 font-medium tracking-wide drop-shadow-sm">Sub-Coordinator of Event Division</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col justify-between space-y-6">
+<div>
+<div class="flex items-center gap-2.5 mb-3">
+<span class="inline-block px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold font-mono">July 2025 - November 2025</span>
+</div>
+<h3 class="text-2xl sm:text-3xl lg:text-[32px] font-bold text-slate-900 tracking-tight leading-tight">Sub-Coordinator of Event Division</h3>
+<p class="text-slate-600 text-sm leading-relaxed mt-2">National scale technology competition under the auspices of KM DTEDI SV UGM.</p>
+</div>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Coordinated a national-scale technology competition, initiating a new concept for Opening & Closing Ceremony.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Managed staff recruitment, including conducting interviews and assessing candidates for the event division.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Acted as PIC for the Valorant Competition, drafting the technical guide (Juknis) and serving as the main liaison between competition and event divisions.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Carousel Card #4: Software Engineering Oriented Study (SERIES) -->
+<div class="carousel-slide shrink-0 w-full bg-white border border-slate-200/80 rounded-3xl shadow-sm p-6 sm:p-10 md:p-12 box-border">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<div class="lg:col-span-4 flex justify-center">
+<div class="w-full max-w-[280px] h-[400px] rounded-3xl p-6 text-white flex flex-col justify-end shadow-2xl relative overflow-hidden bg-gradient-to-b from-[#1e293b] via-[#0f172a] to-[#0284c7]">
+<!-- Foto Dokumentasi Software Engineering Oriented Study (SERIES) -->
+<img src="SERIES.jpg" alt="Foto Software Engineering Oriented Study (SERIES)" class="absolute inset-0 w-full h-full object-cover z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/35 to-transparent z-0 pointer-events-none"></div>
+<div class="z-10 py-2">
+<h3 class="text-2xl sm:text-3xl font-serif italic font-normal text-white leading-tight drop-shadow-md">Software Engineering Oriented Study (SERIES)</h3>
+<p class="text-xs text-slate-200 font-sans mt-2 font-medium tracking-wide drop-shadow-sm">Staff of Event Division & Master of Ceremony</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col justify-between space-y-6">
+<div>
+<div class="flex items-center gap-2.5 mb-3">
+<span class="inline-block px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold font-mono">August 2025 - September 2025</span>
+</div>
+<h3 class="text-2xl sm:text-3xl lg:text-[32px] font-bold text-slate-900 tracking-tight leading-tight">Staff of Event Division & Master of Ceremony</h3>
+<p class="text-slate-600 text-sm leading-relaxed mt-2">Orientation program for new students majoring in Software Engineering.</p>
+</div>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Created the event timeline and rundown for the major's orientation (Ospek Jurusan).</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Acted as Master of Ceremony (MC) for Day 1 & Day 3, including independently writing opening and transition scripts.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Served as Time Keeper for Day 2 to ensure all agenda sessions executed precisely on schedule.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Carousel Card #5: ASSETS UGM -->
+<div class="carousel-slide shrink-0 w-full bg-white border border-slate-200/80 rounded-3xl shadow-sm p-6 sm:p-10 md:p-12 box-border">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<div class="lg:col-span-4 flex justify-center">
+<div class="w-full max-w-[280px] h-[400px] rounded-3xl p-6 text-white flex flex-col justify-end shadow-2xl relative overflow-hidden bg-gradient-to-b from-[#111827] via-[#1f2937] to-[#0369a1]">
+<!-- Foto Dokumentasi ASSETS UGM -->
+<img src="ASSETS.png" alt="Foto ASSETS UGM" class="absolute inset-0 w-full h-full object-cover z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/35 to-transparent z-0 pointer-events-none"></div>
+<div class="z-10 py-2">
+<h3 class="text-2xl sm:text-3xl font-serif italic font-normal text-white leading-tight drop-shadow-md">ASSETS UGM</h3>
+<p class="text-xs text-slate-200 font-sans mt-2 font-medium tracking-wide drop-shadow-sm">Staff of Human Resource Development Division</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col justify-between space-y-6">
+<div>
+<div class="flex items-center gap-2.5 mb-3">
+<span class="inline-block px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold font-mono">March 2025 - December 2025</span>
+</div>
+<h3 class="text-2xl sm:text-3xl lg:text-[32px] font-bold text-slate-900 tracking-tight leading-tight">Staff of Human Resource Development Division</h3>
+<p class="text-slate-600 text-sm leading-relaxed mt-2">Association of Software Engineering Technology Students (ASSETS UGM).</p>
+</div>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Managed the 2024 batch's official jacket (Korsa) ordering project for 96 students, from order consolidation to vendor sourcing.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Organized the First Gathering of 50 members to strengthen student cohesion.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Organized joint study sessions for all software engineering students to prepare and excel in mid-term examinations.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Carousel Card #6: Penalaran Center Community (PCC) -->
+<div class="carousel-slide shrink-0 w-full bg-white border border-slate-200/80 rounded-3xl shadow-sm p-6 sm:p-10 md:p-12 box-border">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<div class="lg:col-span-4 flex justify-center">
+<div class="w-full max-w-[280px] h-[400px] rounded-3xl p-6 text-white flex flex-col justify-end shadow-2xl relative overflow-hidden bg-gradient-to-b from-[#0f172a] via-[#1e293b] to-[#0d9488]">
+<!-- Foto Dokumentasi Penalaran Center Community (PCC) -->
+<img src="PCC.png" alt="Foto Penalaran Center Community (PCC)" class="absolute inset-0 w-full h-full object-cover z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/35 to-transparent z-0 pointer-events-none"></div>
+<div class="z-10 py-2">
+<h3 class="text-2xl sm:text-3xl font-serif italic font-normal text-white leading-tight drop-shadow-md">Penalaran Center Community (PCC)</h3>
+<p class="text-xs text-slate-200 font-sans mt-2 font-medium tracking-wide drop-shadow-sm">Staff of Human Resource Development Division</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col justify-between space-y-6">
+<div>
+<div class="flex items-center gap-2.5 mb-3">
+<span class="inline-block px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold font-mono">February 2025 - February 2026</span>
+</div>
+<h3 class="text-2xl sm:text-3xl lg:text-[32px] font-bold text-slate-900 tracking-tight leading-tight">Staff of Human Resource Development Division</h3>
+<p class="text-slate-600 text-sm leading-relaxed mt-2">Achievement generator community and a space to enhance the creativity of students at SV UGM.</p>
+</div>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Spearheaded the 'PCC Berbagi' program, coordinating distribution to 150+ beneficiaries.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Organized bonding activities and an internal Iftar gathering for 60 members to cultivate community camaraderie.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Conducted comprehensive organizational evaluations to maintain operational and cultural harmony.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Carousel Card #7: PALPOD UGM -->
+<div class="carousel-slide shrink-0 w-full bg-white border border-slate-200/80 rounded-3xl shadow-sm p-6 sm:p-10 md:p-12 box-border">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<div class="lg:col-span-4 flex justify-center">
+<div class="w-full max-w-[280px] h-[400px] rounded-3xl p-6 text-white flex flex-col justify-end shadow-2xl relative overflow-hidden bg-gradient-to-b from-[#1c1917] via-[#292524] to-[#7c3aed]">
+<!-- Foto Dokumentasi PALPOD UGM -->
+<img src="Palpod.jpg" alt="Foto PALPOD UGM" class="absolute inset-0 w-full h-full object-cover z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/35 to-transparent z-0 pointer-events-none"></div>
+<div class="z-10 py-2">
+<h3 class="text-2xl sm:text-3xl font-serif italic font-normal text-white leading-tight drop-shadow-md">PALPOD UGM</h3>
+<p class="text-xs text-slate-200 font-sans mt-2 font-medium tracking-wide drop-shadow-sm">Staff of Content Division</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col justify-between space-y-6">
+<div>
+<div class="flex items-center gap-2.5 mb-3">
+<span class="inline-block px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold font-mono">November 2024 - January 2025</span>
+</div>
+<h3 class="text-2xl sm:text-3xl lg:text-[32px] font-bold text-slate-900 tracking-tight leading-tight">Staff of Content Division</h3>
+<p class="text-slate-600 text-sm leading-relaxed mt-2">A student-led podcast under the auspices of majoring in Software Engineering.</p>
+</div>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Conducted interviews with invited guest speakers as podcast resource persons.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Coordinated communication, briefing materials, and scheduling with guest speakers.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Contributed creative ideas and topic development for upcoming podcast episodes.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Participated as an interviewer in the recruitment process for new Content Division members.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Carousel Card #8: Ikagamass On Tryout (INTO UGM) 2025 -->
+<div class="carousel-slide shrink-0 w-full bg-white border border-slate-200/80 rounded-3xl shadow-sm p-6 sm:p-10 md:p-12 box-border">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<div class="lg:col-span-4 flex justify-center">
+<div class="w-full max-w-[280px] h-[400px] rounded-3xl p-6 text-white flex flex-col justify-end shadow-2xl relative overflow-hidden bg-gradient-to-b from-[#1e293b] via-[#1e1b4b] to-[#1d4ed8]">
+<!-- Foto Dokumentasi Ikagamass On Tryout (INTO UGM) 2025 -->
+<img src="INTO 2025.png" alt="Foto Ikagamass On Tryout (INTO UGM) 2025" class="absolute inset-0 w-full h-full object-cover z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/35 to-transparent z-0 pointer-events-none"></div>
+<div class="z-10 py-2">
+<h3 class="text-2xl sm:text-3xl font-serif italic font-normal text-white leading-tight drop-shadow-md">Ikagamass On Tryout (INTO UGM) 2025</h3>
+<p class="text-xs text-slate-200 font-sans mt-2 font-medium tracking-wide drop-shadow-sm">Staff of Event Division & PIC MC/Moderator</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col justify-between space-y-6">
+<div>
+<div class="flex items-center gap-2.5 mb-3">
+<span class="inline-block px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold font-mono">September 2024 - January 2025</span>
+</div>
+<h3 class="text-2xl sm:text-3xl lg:text-[32px] font-bold text-slate-900 tracking-tight leading-tight">Staff of Event Division & PIC MC/Moderator</h3>
+<p class="text-slate-600 text-sm leading-relaxed mt-2">A series of national tryout event held by IKAGAMASS UGM with 1000+ Participants.</p>
+</div>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Created and developed event concepts, detailed rundowns, and videotron visual concepts.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Organized the First Gathering of 90 committee members.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Sourced guest speakers and arranged optimal venue layout.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Conducted outreach and socialization to high school students in classrooms and school halls.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">PIC for Master of Ceremony & Moderator: Established timelines, interview questions, evaluation rubrics, and drafted speaking scripts.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Carousel Card #9: Tech Enthusiast Day 2024 (TED 2024) -->
+<div class="carousel-slide shrink-0 w-full bg-white border border-slate-200/80 rounded-3xl shadow-sm p-6 sm:p-10 md:p-12 box-border">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<div class="lg:col-span-4 flex justify-center">
+<div class="w-full max-w-[280px] h-[400px] rounded-3xl p-6 text-white flex flex-col justify-end shadow-2xl relative overflow-hidden bg-gradient-to-b from-[#18181b] via-[#27272a] to-[#0284c7]">
+<!-- Foto Dokumentasi Tech Enthusiast Day 2024 (TED 2024) -->
+<img src="TED 2024.png" alt="Foto Tech Enthusiast Day 2024 (TED 2024)" class="absolute inset-0 w-full h-full object-cover z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/35 to-transparent z-0 pointer-events-none"></div>
+<div class="z-10 py-2">
+<h3 class="text-2xl sm:text-3xl font-serif italic font-normal text-white leading-tight drop-shadow-md">Tech Enthusiast Day 2024 (TED 2024)</h3>
+<p class="text-xs text-slate-200 font-sans mt-2 font-medium tracking-wide drop-shadow-sm">Staff of Sponsorship Division</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col justify-between space-y-6">
+<div>
+<div class="flex items-center gap-2.5 mb-3">
+<span class="inline-block px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold font-mono">September 2024 - November 2024</span>
+</div>
+<h3 class="text-2xl sm:text-3xl lg:text-[32px] font-bold text-slate-900 tracking-tight leading-tight">Staff of Sponsorship Division</h3>
+<p class="text-slate-600 text-sm leading-relaxed mt-2">National scale technology competition under the auspices of KM DTEDI SV UGM.</p>
+</div>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Sought sponsors to collaborate with TED 2024 and prepared tailored sponsorship packages, successfully securing 10+ million IDR in funding.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-sky-500 font-bold text-sm shrink-0 mt-0.5">&#10003;</span>
+<p class="text-xs sm:text-sm text-slate-600 leading-normal">Facilitated active communication with corporate sponsors to negotiate and finalize collaboration agreements.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Carousel Navigation Dots -->
+<div class="flex items-center justify-center gap-2 mt-8" id="carousel-dots-container">
+<button class="carousel-dot bg-brand-500 w-6 h-2 rounded-full transition-all duration-300 focus:outline-none" data-index="0" aria-label="Go to slide 1"></button>
+<button class="carousel-dot bg-slate-300 hover:bg-slate-400 w-2 h-2 rounded-full transition-all duration-300 focus:outline-none" data-index="1" aria-label="Go to slide 2"></button>
+<button class="carousel-dot bg-slate-300 hover:bg-slate-400 w-2 h-2 rounded-full transition-all duration-300 focus:outline-none" data-index="2" aria-label="Go to slide 3"></button>
+<button class="carousel-dot bg-slate-300 hover:bg-slate-400 w-2 h-2 rounded-full transition-all duration-300 focus:outline-none" data-index="3" aria-label="Go to slide 4"></button>
+<button class="carousel-dot bg-slate-300 hover:bg-slate-400 w-2 h-2 rounded-full transition-all duration-300 focus:outline-none" data-index="4" aria-label="Go to slide 5"></button>
+<button class="carousel-dot bg-slate-300 hover:bg-slate-400 w-2 h-2 rounded-full transition-all duration-300 focus:outline-none" data-index="5" aria-label="Go to slide 6"></button>
+<button class="carousel-dot bg-slate-300 hover:bg-slate-400 w-2 h-2 rounded-full transition-all duration-300 focus:outline-none" data-index="6" aria-label="Go to slide 7"></button>
+<button class="carousel-dot bg-slate-300 hover:bg-slate-400 w-2 h-2 rounded-full transition-all duration-300 focus:outline-none" data-index="7" aria-label="Go to slide 8"></button>
+<button class="carousel-dot bg-slate-300 hover:bg-slate-400 w-2 h-2 rounded-full transition-all duration-300 focus:outline-none" data-index="8" aria-label="Go to slide 9"></button>
+</div>
+</div>
+</div>
+</section>
+<!-- END: LeadershipExperienceSection -->
+<!-- BEGIN: WhatIDoSection -->
+<section class="py-24 bg-white relative overflow-hidden scroll-mt-16 border-t border-slate-100" id="what-i-do">
+<div aria-hidden="true" class="absolute inset-0 pointer-events-none -z-10 overflow-hidden">
+<div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[850px] h-[500px] rounded-full blur-[110px] animate-pulse-glow pointer-events-none" style="background: radial-gradient(circle, rgba(56, 189, 248, 0.45) 0%, rgba(14, 165, 233, 0.25) 35%, rgba(147, 197, 253, 0.15) 65%, transparent 80%);"></div>
+<div class="absolute bottom-8 right-1/4 w-72 h-72 rounded-full blur-3xl opacity-40 animate-float-medium" style="background: radial-gradient(circle, rgba(56, 189, 248, 0.3) 0%, transparent 70%);"></div>
+</div>
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight">My Growth &amp; <span class="font-serif italic font-normal text-brand-600">Contributions</span></h2>
+<p class="mt-3 text-slate-600 text-sm md:text-base leading-relaxed">Recognizing milestones, continuous learning, and meaningful contributions through academic achievements and community engagement.</p>
+</div>
+
+<!-- Part 1: Two Prominent Credential & Award Action Cards with Modal Triggers (No Arrow Icons) -->
+<div class="max-w-4xl mx-auto text-[11px] font-semibold uppercase tracking-wider text-slate-400 mb-3">Certifications &amp; Achievements</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-20">
+<!-- Button 1: HCIA-AI V4.0 -->
+<button class="group p-6 sm:p-7 rounded-3xl bg-white border border-slate-200/90 hover:border-brand-500 shadow-sm hover:shadow-xl transition-all duration-300 text-left flex items-start justify-between gap-4 cursor-pointer" onclick="openModal('modal-hcia')" type="button">
+<div class="flex items-start gap-4">
+<div class="w-14 h-14 rounded-2xl bg-brand-50 border border-brand-100 flex items-center justify-center shrink-0 text-brand-600 group-hover:scale-105 group-hover:bg-brand-500 group-hover:text-white transition-all duration-300 shadow-sm">
+<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2.5 py-0.5 rounded-full bg-brand-50 text-brand-700 text-[11px] font-semibold">Certified Credential</span>
+<span class="text-[11px] font-mono text-slate-400">Huawei AI V4.0</span>
+</div>
+<h3 class="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-brand-600 transition-colors">HCIA-AI V4.0 Course</h3>
+<p class="text-xs text-slate-500 mt-1 leading-relaxed">Artificial Intelligence fundamentals, ML evaluation, and deep learning verification.</p>
+</div>
+</div>
+</button>
+
+<!-- Button 2: Essay Competition -->
+<button class="group p-6 sm:p-7 rounded-3xl bg-white border border-slate-200/90 hover:border-amber-500 shadow-sm hover:shadow-xl transition-all duration-300 text-left flex items-start justify-between gap-4 cursor-pointer" onclick="openModal('modal-essay')" type="button">
+<div class="flex items-start gap-4">
+<div class="w-14 h-14 rounded-2xl bg-amber-50 border border-amber-100 flex items-center justify-center shrink-0 text-amber-600 group-hover:scale-105 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 shadow-sm">
+<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-700 text-[11px] font-semibold">2nd Place Award</span>
+<span class="text-[11px] font-mono text-slate-400">TRPL League</span>
+</div>
+<h3 class="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-amber-600 transition-colors">Essay Competition</h3>
+<p class="text-xs text-slate-500 mt-1 leading-relaxed">Big Data as an accelerator of personal convenience and ethical balance in the digital era.</p>
+</div>
+</div>
+</button>
+</div>
+
+<!-- Part 2: Community Engagement -->
+<div class="max-w-4xl mx-auto">
+<div class="text-[11px] font-semibold uppercase tracking-wider text-slate-400 mb-3 mt-6">Community Engagement</div>
+<div class="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-brand-400 transition-all duration-300 relative overflow-hidden group">
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-6 pb-6 border-b border-slate-100">
+<div class="flex items-start gap-4 sm:gap-5">
+<div>
+<div class="flex flex-wrap items-center gap-2 mb-2">
+<span class="text-xs font-mono text-slate-400">August 2025 – January 2026</span>
+</div>
+<h3 class="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-brand-600 transition-colors tracking-tight">Publication &amp; Field Research Team</h3>
+<p class="text-sm font-medium text-brand-700 mt-1">Village Potential Mapping in Sumberarum, Magelang · Lecturer's Community Service Project</p>
+</div>
+</div>
+<div class="shrink-0">
+<a class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-brand-50 hover:bg-brand-500 text-brand-700 hover:text-white border border-brand-200 hover:border-brand-500 text-xs font-semibold transition-all duration-200 shadow-sm" href="https://trpl.sv.ugm.ac.id/2025/12/31/gali-potensi-lokal-dosen-dan-mahasiswa-trpl-sv-ugm-lakukan-survei-pengabdian-masyarakat-di-sumberarum-magelang/" rel="noopener noreferrer" target="_blank">
+<span>Read Published Article</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+</div>
+<div class="mt-6">
+<p class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Key Responsibilities &amp; Outcomes</p>
+<ul class="space-y-3">
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 mt-0.5 border border-brand-100">
+<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</div>
+<p class="text-sm text-slate-600 leading-relaxed font-normal">Conducted comprehensive field research and structured in-depth interviews with local culinary business owners, MSMEs, and community leaders across Sumberarum village.</p>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 mt-0.5 border border-brand-100">
+<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</div>
+<p class="text-sm text-slate-600 leading-relaxed font-normal">Processed and synthesized qualitative interview findings into narrative scripts and primary content for a local wisdom promotional video as the project's key public deliverable.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: WhatIDoSection -->
+<!-- BEGIN: Modals for What I Do Qualifications (Default hidden, bright light & blue theme) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/40 backdrop-blur-sm hidden" id="modal-hcia" onclick="handleBackdropClick(event, 'modal-hcia')">
+<div class="relative bg-white rounded-3xl border border-slate-200/90 shadow-2xl max-w-3xl w-full p-6 sm:p-8 overflow-hidden transform transition-all text-slate-800" onclick="event.stopPropagation()">
+<button class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center transition focus:outline-none z-10" onclick="closeModal('modal-hcia')" type="button" aria-label="Close modal">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center pt-2">
+<!-- Left: Full Certificate Image Only -->
+<div class="rounded-2xl bg-slate-50 border border-slate-200/80 p-2 flex items-center justify-center h-72 sm:h-80 shadow-inner relative overflow-hidden">
+<img src="HCIA-AI V4.0 Course.png" alt="HCIA-AI V4.0 Certification" class="w-full h-full object-contain rounded-xl">
+</div>
+<!-- Right: Detailed Information -->
+<div>
+<span class="px-2.5 py-0.5 rounded-full bg-brand-50 text-brand-700 text-xs font-semibold">Technical Certification</span>
+<h3 class="text-2xl font-bold text-slate-900 mt-2">HCIA-AI V4.0 Credential</h3>
+<p class="text-xs text-slate-500 mt-1">Issued by Huawei ICT Academy · Completed 2026</p>
+<p class="mt-4 text-xs sm:text-sm text-slate-600 leading-relaxed">Completed rigorous technical coursework and exam covering machine learning pipelines, deep learning frameworks, neural network training, model evaluation metrics, and AI workflow integration for modern digital systems.</p>
+<div class="mt-4 space-y-2">
+<div class="flex items-center gap-2 text-xs text-slate-700 font-medium">
+<span class="text-brand-600 font-bold">&#10003;</span> Core AI &amp; Deep Learning Architectures
+</div>
+<div class="flex items-center gap-2 text-xs text-slate-700 font-medium">
+<span class="text-brand-600 font-bold">&#10003;</span> ML Model Verification &amp; Metric Optimization
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/40 backdrop-blur-sm hidden" id="modal-essay" onclick="handleBackdropClick(event, 'modal-essay')">
+<div class="relative bg-white rounded-3xl border border-slate-200/90 shadow-2xl max-w-3xl w-full p-6 sm:p-8 overflow-hidden transform transition-all text-slate-800" onclick="event.stopPropagation()">
+<button class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center transition focus:outline-none z-10" onclick="closeModal('modal-essay')" type="button" aria-label="Close modal">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center pt-2">
+<!-- Left: Full Certificate Image Only -->
+<div class="rounded-2xl bg-slate-50 border border-slate-200/80 p-2 flex items-center justify-center h-72 sm:h-80 shadow-inner relative overflow-hidden">
+<img src="SecondPlace_Essay.jpeg" alt="2nd Place TRPL League Essay" class="w-full h-full object-contain rounded-xl">
+</div>
+<!-- Right: Detailed Information -->
+<div>
+<span class="px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-700 text-xs font-semibold">2nd Place Award · Study Program Level</span>
+<h3 class="text-lg sm:text-xl font-bold text-slate-900 mt-2 leading-snug">MELAMPAUI DILEMA: BIG DATA SEBAGAI AKSELERATOR KENYAMANAN PERSONAL DI ERA DIGITAL</h3>
+<p class="text-xs text-slate-500 mt-1">TRPL League Essay Competition · Sekolah Vokasi UGM</p>
+<p class="mt-4 text-xs sm:text-sm text-slate-600 leading-relaxed">Authored an analytical paper exploring the strategic role of Big Data as an accelerator for personal convenience and user experience optimization in the digital era, while addressing critical dilemmas in data privacy governance, ethical boundaries, and information security.</p>
+<div class="mt-4 space-y-2">
+<div class="flex items-center gap-2 text-xs text-slate-700 font-medium">
+<span class="text-amber-600 font-bold">&#10003;</span> Big Data Ethics &amp; Personal Privacy Governance
+</div>
+<div class="flex items-center gap-2 text-xs text-slate-700 font-medium">
+<span class="text-amber-600 font-bold">&#10003;</span> Data-Driven Personalization &amp; Digital Convenience
+</div>
+<div class="flex items-center gap-2 text-xs text-slate-700 font-medium">
+<span class="text-amber-600 font-bold">&#10003;</span> Balancing System Utility with Information Security
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function openModal(id) {
+    var el = document.getElementById(id);
+    if (el) {
+      el.classList.remove('hidden');
+    }
+  }
+  function closeModal(id) {
+    var el = document.getElementById(id);
+    if (el) {
+      el.classList.add('hidden');
+    }
+  }
+  function handleBackdropClick(e, id) {
+    if (e.target && e.target.id === id) {
+      closeModal(id);
+    }
+  }
+</script>
+<!-- END: Modals for What I Do Qualifications -->
+<!-- BEGIN: ContactSection -->
+<section class="py-24 bg-gradient-to-b from-white to-brand-50/50 border-t border-slate-100 overflow-hidden relative" id="contact"><div aria-hidden="true" class="absolute inset-0 pointer-events-none -z-10 overflow-hidden"><div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[850px] h-[500px] rounded-full blur-[110px] animate-pulse-glow pointer-events-none" style="background: radial-gradient(circle, rgba(56, 189, 248, 0.45) 0%, rgba(14, 165, 233, 0.28) 35%, rgba(147, 197, 253, 0.18) 65%, transparent 80%);"></div><div class="absolute top-1/4 left-1/4 -translate-x-1/2 w-80 h-80 rounded-full blur-[100px] animate-float-slow pointer-events-none" style="background: radial-gradient(circle, rgba(56, 189, 248, 0.35) 0%, rgba(125, 211, 252, 0.2) 50%, transparent 75%);"></div><div class="absolute top-1/4 right-1/4 translate-x-1/2 w-80 h-80 rounded-full blur-[100px] animate-float-medium pointer-events-none" style="background: radial-gradient(circle, rgba(147, 197, 253, 0.4) 0%, rgba(56, 189, 248, 0.2) 50%, transparent 75%);"></div><div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-64 rounded-full blur-3xl animate-float-subtle pointer-events-none" style="background: radial-gradient(ellipse, rgba(56, 189, 248, 0.25) 0%, rgba(186, 224, 253, 0.12) 55%, transparent 80%);"></div></div>
+<div class="max-w-4xl mx-auto px-6 text-center relative z-10 reveal-on-scroll">
+
+<h2 class="mt-4 text-3xl sm:text-5xl font-light text-slate-900 tracking-tight">
+          Let's Create Something <span class="font-serif italic text-brand-600 font-normal">Meaningful</span></h2>
+<p class="mt-4 text-slate-600 text-base max-w-xl mx-auto">
+          Every project starts with an idea. I enjoy turning those ideas into structured plans, collaborative work, and reliable solutions.
+        </p>
+<!-- Direct Contact Action Strip -->
+<div class="mt-10 flex flex-wrap justify-center items-center gap-4">
+<a class="px-6 py-3.5 rounded-full bg-slate-900 text-white font-medium text-sm hover:bg-brand-600 transition shadow-md flex items-center gap-2" href="mailto:kamilaanisa00@gmail.com">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+            Send Email
+          </a>
+<a class="px-6 py-3.5 rounded-full bg-white border border-slate-300 text-slate-800 font-medium text-sm hover:border-brand-500 hover:text-brand-600 transition shadow-sm flex items-center gap-2" href="https://www.linkedin.com/in/kamilaanisa" rel="noopener noreferrer" target="_blank">
+<span class="">LinkedIn Profile</span>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+<a class="px-6 py-3.5 rounded-full bg-white border border-slate-300 text-slate-800 font-medium text-sm hover:border-brand-500 hover:text-brand-600 transition shadow-sm flex items-center gap-2" href="https://github.com/kamilaanisa" rel="noopener noreferrer" target="_blank">
+<span class="">GitHub</span>
+</a>
+<a class="px-6 py-3.5 rounded-full bg-white border border-slate-300 text-slate-800 font-medium text-sm hover:border-brand-500 hover:text-brand-600 transition shadow-sm flex items-center gap-2 cursor-pointer" href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;"><span class="">Back to Top</span><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 10l7-7m0 0l7 7m-7-7v18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a></div>
+</div>
+</section>
+<!-- END: ContactSection -->
+</main>
+<!-- BEGIN: Footer -->
+<footer class="bg-white border-t border-slate-100 py-8 text-center text-xs text-slate-400">
+<div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-2">
+<span class="font-serif italic font-bold text-slate-800 text-sm">kamila.</span>
+<span class="">— Project Manager &amp; Quality Assurance</span>
+</div>
+<p class="">© 2026 Kamila. All deliverables &amp; documentation cases reserved.</p>
+</div>
+</footer>
+<!-- END: Footer -->
+<!-- BEGIN: Script - Interactive Filtering and Carousel -->
+<script data-purpose="toolkit-filtering">
+  // Interactive Toolkit Category Filter
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('#toolkit-filters .filter-btn');
+    const toolItems = document.querySelectorAll('.tool-item');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-slate-900', 'text-white');
+          b.classList.add('bg-slate-100', 'text-slate-600');
+        });
+        btn.classList.add('bg-slate-900', 'text-white');
+        btn.classList.remove('bg-slate-100', 'text-slate-600');
+
+        const filter = btn.getAttribute('data-filter');
+
+        toolItems.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.style.display = 'block';
+            item.style.opacity = '1';
+          } else {
+            item.style.opacity = '0.2';
+          }
+        });
+      });
+    });
+  });
+</script>
+<script data-purpose="scroll-reveal">
+  // Intersection Observer for fluid scroll reveal
+  document.addEventListener('DOMContentLoaded', () => {
+    const revealElements = document.querySelectorAll('.reveal-on-scroll');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.08,
+        rootMargin: '0px 0px -40px 0px'
+      });
+      revealElements.forEach(el => observer.observe(el));
+    } else {
+      revealElements.forEach(el => el.classList.add('is-revealed'));
+    }
+  });
+</script>
+<script data-purpose="carousel-navigation">
+  // Synchronized, Zero-Lag Infinite Carousel for exactly 8 distinct cards
+  document.addEventListener('DOMContentLoaded', () => {
+    const track = document.getElementById('carousel-track');
+    const container = document.getElementById('carousel-container');
+    const prevBtn = document.getElementById('carousel-prev');
+    const nextBtn = document.getElementById('carousel-next');
+    const dotsContainer = document.getElementById('carousel-dots-container');
+
+    if (!track) return;
+
+    // Filter real slides only (exclude any clones)
+    const slides = Array.from(track.querySelectorAll('.carousel-slide')).filter(s => !s.classList.contains('clone'));
+    const totalSlides = slides.length; // Exactly 8
+    if (totalSlides === 0) return;
+
+    // Remove any leftover clones in DOM
+    track.querySelectorAll('.carousel-slide.clone').forEach(el => el.remove());
+
+    // Create single buffer clone at each boundary
+    const lastClone = slides[totalSlides - 1].cloneNode(true);
+    lastClone.classList.add('clone');
+    lastClone.setAttribute('aria-hidden', 'true');
+
+    const firstClone = slides[0].cloneNode(true);
+    firstClone.classList.add('clone');
+    firstClone.setAttribute('aria-hidden', 'true');
+
+    track.insertBefore(lastClone, slides[0]);
+    track.appendChild(firstClone);
+
+    const dots = dotsContainer ? Array.from(dotsContainer.querySelectorAll('.carousel-dot')) : [];
+
+    // Track starts at virtual index 1 (Slide 0)
+    let currentIndex = 1;
+    let isTransitioning = false;
+    let autoplayTimer = null;
+    let safetyTimeout = null;
+
+    // Synchronize indicator dot instantaneously
+    function updateDots(activeRealIndex) {
+      dots.forEach((dot, idx) => {
+        if (idx === activeRealIndex) {
+          dot.className = 'carousel-dot bg-brand-500 w-6 h-2 rounded-full transition-all duration-300 focus:outline-none shadow-sm';
+          dot.setAttribute('aria-current', 'true');
+        } else {
+          dot.className = 'carousel-dot bg-slate-300 hover:bg-slate-400 w-2 h-2 rounded-full transition-all duration-300 focus:outline-none';
+          dot.removeAttribute('aria-current');
+        }
+      });
+    }
+
+    // Maps virtual index (0 to totalSlides + 1) to real dot index (0 to totalSlides - 1)
+    function getRealIndex(idx) {
+      if (idx === 0) return totalSlides - 1;
+      if (idx === totalSlides + 1) return 0;
+      return idx - 1;
+    }
+
+    function applyPosition(withTransition = true) {
+      if (withTransition) {
+        track.style.transition = 'transform 500ms cubic-bezier(0.25, 1, 0.5, 1)';
+      } else {
+        track.style.transition = 'none';
+      }
+      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    // Set initial position immediately without transition
+    applyPosition(false);
+    updateDots(0);
+
+    function goToSlide(targetIndex, withTransition = true) {
+      if (isTransitioning && withTransition) return;
+
+      isTransitioning = withTransition;
+      currentIndex = targetIndex;
+
+      // Update dots instantaneously with the movement start - eliminating any indicator lag
+      updateDots(getRealIndex(currentIndex));
+      applyPosition(withTransition);
+
+      if (withTransition) {
+        clearTimeout(safetyTimeout);
+        safetyTimeout = setTimeout(() => {
+          handleTransitionEnd();
+        }, 550);
+      }
+    }
+
+    function nextSlide() {
+      if (isTransitioning) return;
+      goToSlide(currentIndex + 1);
+    }
+
+    function prevSlide() {
+      if (isTransitioning) return;
+      goToSlide(currentIndex - 1);
+    }
+
+    function handleTransitionEnd() {
+      clearTimeout(safetyTimeout);
+      if (!isTransitioning) return;
+      isTransitioning = false;
+
+      // Seamless snap-back at edges
+      if (currentIndex === totalSlides + 1) {
+        // Appended clone -> snap to first real slide
+        currentIndex = 1;
+        applyPosition(false);
+      } else if (currentIndex === 0) {
+        // Prepended clone -> snap to last real slide
+        currentIndex = totalSlides;
+        applyPosition(false);
+      }
+    }
+
+    track.addEventListener('transitionend', (e) => {
+      // Ignore transitions triggered by child elements (e.g. hover states)
+      if (e.target !== track || e.propertyName !== 'transform') return;
+      handleTransitionEnd();
+    });
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        nextSlide();
+        resetAutoplay();
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        prevSlide();
+        resetAutoplay();
+      });
+    }
+
+    dots.forEach(dot => {
+      dot.addEventListener('click', (e) => {
+        const targetDotIdx = parseInt(e.currentTarget.getAttribute('data-index'), 10);
+        goToSlide(targetDotIdx + 1);
+        resetAutoplay();
+      });
+    });
+
+    // Touch swipe support for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+    track.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+      stopAutoplay();
+    }, { passive: true });
+
+    track.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+      startAutoplay();
+    }, { passive: true });
+
+    function handleSwipe() {
+      const diff = touchEndX - touchStartX;
+      if (Math.abs(diff) > 40) {
+        if (diff < 0) {
+          nextSlide();
+        } else {
+          prevSlide();
+        }
+      }
+    }
+
+    function startAutoplay() {
+      stopAutoplay();
+      autoplayTimer = setInterval(() => {
+        nextSlide();
+      }, 5000);
+    }
+
+    function stopAutoplay() {
+      if (autoplayTimer) {
+        clearInterval(autoplayTimer);
+        autoplayTimer = null;
+      }
+    }
+
+    function resetAutoplay() {
+      stopAutoplay();
+      startAutoplay();
+    }
+
+    if (container) {
+      container.addEventListener('mouseenter', stopAutoplay);
+      container.addEventListener('mouseleave', startAutoplay);
+    }
+
+    startAutoplay();
+  });
+</script>
+<!-- END: Script - Interactive Filtering and Carousel -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
